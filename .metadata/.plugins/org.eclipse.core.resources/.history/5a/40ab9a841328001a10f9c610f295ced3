@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Funcao {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Digite três números: ");
+		int a= s.nextInt();
+		int b = s.nextInt();
+		int c = s.nextInt();
+		
+		if(a > b && a > c) {
+			System.out.printf("A é maior = %d%n");
+		}else if(b > c) {
+			System.out.printf("B é maior = %d%n");
+		}else {
+			System.out.printf("C é maior = %d%n");
+		}
+		s.close();
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;3S-1/src/gui/ListaPessoa.fxml&apos; to &apos;PessoaForm.fxml&apos;" description="Rename resource &apos;ListaPessoa.fxml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/gui/ListaPessoa.fxml" name="PessoaForm.fxml" stamp="1583692475118" updateReferences="true"/>
+</session>

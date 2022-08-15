@@ -1,0 +1,45 @@
+package application;
+
+import java.util.List;
+
+import db.DB;
+import model.dao.DaoFactory;
+import model.dao.DepartmentDao;
+import model.entities.Department;
+
+public class Program2 {
+	
+	public static void main(String[] args) {
+		
+		DepartmentDao depDao = DaoFactory.createDepartmentDao();
+		
+		System.out.println("===Test 1: department findById===");
+		Department depart = depDao.findById(3);
+		System.out.println(depart);
+		
+		
+		System.out.println("\n===Test 2: department findAll===");
+		List<Department> l1 = depDao.findAll();
+		l1 = depDao.findAll();
+		for(Department obj: l1) {
+			System.out.println(obj);
+		}
+		
+		System.out.println("\n===Test 3: department insert===");
+		Department d = new Department(null,"Books");
+		depDao.insert(d);
+		System.out.println("Insert! new id = "+ d.getId());
+		
+		System.out.println("\n===Test 4: department update===");
+		depart = depDao.findById(4);
+		depart.setName("Bebidas");
+		depDao.update(depart);
+		System.out.println("Update completed");
+		
+		System.out.println("\n===Test 5: seller delete===");
+		depDao.deleteById(7);
+		System.out.println("Delete completed");
+		
+		DB.closeConnection();
+	}
+}

@@ -1,0 +1,46 @@
+package entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Product {
+	private String name;
+	protected Double price;
+	
+	private List<Product> product = new ArrayList<>();
+	
+	public Product() {
+	}
+
+	public Product(String name, Double price, List<Product> product) {
+		this.name = name;
+		this.price = price;
+		this.product = product;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Double getPrice() {
+		return price;
+	}
+	
+	public List<Product> getProduct() {
+		return product;
+	}
+	public void addProduct(Product product) {
+		this.product.add(product);
+	}
+	
+
+	public String priceTag() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(name + " $ " + price);
+		return sb.toString();
+	}
+}

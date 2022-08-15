@@ -1,0 +1,49 @@
+package model.entities;
+
+import java.io.Serializable;
+
+public class Person implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	private Integer id;
+	private String email,name;
+	
+	public Person() {
+	}
+
+	public Person(Integer id, String email, String name) {
+		this.id = id;
+		this.email = email;
+		this.name = name;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getEmail() {
+		return Email;
+	}
+
+	public void setEmail(String email) {
+		Email = email;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", Email=" + Email + ", Name=" + Name + "]";
+	}
+	
+}

@@ -1,0 +1,33 @@
+package appication;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Program {
+
+	public static void main(String[] args) throws ParseException {
+		
+		SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");// cria um formato
+		SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+		Date x1 = new Date(); //data atual
+		Date x2 = new Date(System.currentTimeMillis());
+		Date x3 = new Date(0l);
+		Date x4 = new Date(1000l * 60l * 60l * 5l);
+		//1 segundo tem mil milisegundos
+		Date y1 = sdf1.parse("31/12/2019");
+		Date y2 = sdf2.parse("31/12/2019 13:23:40");
+		
+		System.out.printf("X1:" +sdf2.format(x1)+ "%n%n");
+		System.out.println(x1);
+		System.out.println("x2:" +sdf2.format(x2)+ "%n");
+		System.out.println(x2);
+		System.out.println("X3:" +sdf2.format(x3)+ "%n");
+		System.out.println("X4:" +sdf2.format(x4)+ "%n");
+		System.out.println("Y1:" +sdf2.format(y1)+"%n");
+		System.out.println(y1);
+		System.out.println("Y2 :" +sdf2.format(y2)+"%n");
+		System.out.println(y2);
+	}
+
+}

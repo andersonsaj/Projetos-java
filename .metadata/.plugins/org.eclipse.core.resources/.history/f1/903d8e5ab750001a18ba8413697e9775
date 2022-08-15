@@ -1,0 +1,13 @@
+package model.entities;
+
+import java.util.Date;
+
+public class Seller {
+	
+	private Integer id,DepartmentId;
+	private String name,email;
+	private Double BaseSalary;
+	private Date birthDate;
+	
+	private Department department;
+}

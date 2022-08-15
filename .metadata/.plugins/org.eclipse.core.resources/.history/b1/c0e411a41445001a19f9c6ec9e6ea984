@@ -1,0 +1,16 @@
+package application3;
+
+import entities.Client;
+
+public class Program {
+	
+	public static void main(String[] args) {
+		
+		Client c = new Client("Maria" , "maria@gmail.com");
+		Client c1 = new Client("Alex" , "alex@gmail.com");
+	
+		System.out.println(c.hashCode());
+		System.out.println(c1.hashCode());
+		System.out.println(c1.equals(c1));
+	}
+}

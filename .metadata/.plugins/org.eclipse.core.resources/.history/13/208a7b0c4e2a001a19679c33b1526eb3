@@ -1,0 +1,9 @@
+package entitiesExeVetc;
+
+public class Roon {
+	private String name, email;
+}
+public Room(String name, String email) {
+	this.email = email;
+	this.name = name;
+}

@@ -1,0 +1,5 @@
+package mod.services;
+
+public class PagamentoServico {
+
+}

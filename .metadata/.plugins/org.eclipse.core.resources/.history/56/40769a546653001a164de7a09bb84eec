@@ -1,0 +1,17 @@
+package model.entities;
+
+public class Person {
+
+	private Integer id;
+	private String Email,Name;
+	
+	public Person() {
+	}
+
+	public Person(Integer id, String email, String name) {
+		this.id = id;
+		Email = email;
+		Name = name;
+	}
+	
+}

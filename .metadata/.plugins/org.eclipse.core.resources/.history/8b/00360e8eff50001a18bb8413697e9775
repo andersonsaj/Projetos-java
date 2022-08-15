@@ -1,0 +1,80 @@
+package application;
+
+import java.util.Date;
+import java.util.List;
+
+import model.dao.DaoFactory;
+import model.dao.DepartmentDao;
+import model.dao.SellerDao;
+import model.entities.Department;
+import model.entities.Seller;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		SellerDao sellerDao = DaoFactory.createSellerDao();
+		DepartmentDao depDao = DaoFactory.createDepartmentDao();
+		
+		System.out.println("===Test 1: seller findById===");
+		Seller seller = sellerDao.findById(3);
+		System.out.println(seller);
+		
+		System.out.println("\n===Test 2: seller findByDepartment===");
+		Department dep = new Department(2,null);
+		List<Seller> list = sellerDao.findByDepartment(dep);
+		for(Seller obj: list) {
+			System.out.println(obj);
+		}
+		
+		System.out.println("\n===Test 3: seller findAll===");
+		 list = sellerDao.findAll();
+		for(Seller obj: list) {
+			System.out.println(obj);
+		}
+		
+		System.out.println("\n===Test 4: seller insert===");
+		Seller sl = new Seller(null, "Ju", "ju@gmail.com", 4000.0, new Date(), new Department(1,null));
+		sellerDao.insert(sl);
+		System.out.println("Insert! new id = "+ sl.getId());
+		
+		System.out.println("\n===Test 5: seller update===");
+		seller = sellerDao.findById(1);
+		seller.setName("Maria");
+		sellerDao.update(seller);
+		System.out.println("Update completed");
+		
+		System.out.println("\n===Test 6: seller delete===");
+		sellerDao.deleteById(20);
+		System.out.println("Delete completed");
+		//
+		System.out.println("---------------------------------");
+		System.out.println("===Test 1: department findById===");
+		Department depart = depDao.findById(3);
+		System.out.println(depart);
+		
+		
+		System.out.println("\n===Test 2: department findAll===");
+		List<Department> l1 = depDao.findAll();
+		l1 = depDao.findAll();
+		for(Department obj: l1) {
+			System.out.println(obj);
+		}
+		
+		System.out.println("\n===Test 3: department insert===");
+		Department d = new Department(null,"Books");
+		depDao.insert(d);
+		System.out.println("Insert! new id = "+ d.getId());
+		
+		System.out.println("\n===Test 4: department update===");
+		depart = depDao.findById(1);
+		depart.setName("Bebidas");
+		depDao.update(depart);
+		System.out.println("Update completed");
+		
+		System.out.println("\n===Test 6: seller delete===");
+		depDao.deleteById(6);
+		System.out.println("Delete completed");
+	}
+
+}

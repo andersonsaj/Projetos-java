@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Funcao {
+
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Digite três números: ");
+		int a = s.nextInt();
+		int b = s.nextInt();
+		int c = s.nextInt();
+		
+		int maior = max(a,b,c);
+		
+		mostraMaior(maior);
+		
+		s.close();
+	}
+	public static int max(int x, int y, int z) {
+		int aux;
+		if(x > y && x > z) {
+			aux = x;
+		}else if (y > z) {
+			aux = y;
+		}else {
+			aux = z;
+		}
+	}
+	public static mostraMaior( int valor) {
+		System.out.printf("O maior valor = %d%n%n",valor );
+	}
+}

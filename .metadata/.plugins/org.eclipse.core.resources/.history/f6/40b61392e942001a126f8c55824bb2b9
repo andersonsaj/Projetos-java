@@ -1,0 +1,5 @@
+package m.entities;
+
+public interface InterestRate {
+
+}

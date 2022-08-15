@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;chess.pieces.pawn&apos; to &apos;Pawn&apos;&#x0D;&#x0A;- Original project: &apos;Chess&apos;&#x0D;&#x0A;- Original element: &apos;chess.pieces.pawn&apos;&#x0D;&#x0A;- Renamed element: &apos;chess.pieces.Pawn&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;pawn&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;chess.pieces{pawn.java[pawn" matchStrategy="1" name="Pawn" qualified="false" references="true" similarDeclarations="false" stamp="1579560824274" textual="false" version="1.0"/>
+</session>

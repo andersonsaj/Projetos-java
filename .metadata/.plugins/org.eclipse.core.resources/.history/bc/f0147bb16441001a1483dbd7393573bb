@@ -1,0 +1,23 @@
+package mod.services;
+
+import mod.entities.Contrato;
+
+public class ContratoServico {
+	
+	private PagamentoServicoOnline pagamentoServicoOnline;
+	
+	
+	public ContratoServico(PagamentoServicoOnline pagamentoServicoOnline) {
+		this.pagamentoServicoOnline = pagamentoServicoOnline;
+	}
+
+
+	public void processContrato(Contrato contrato, Integer meses) {
+		double cotaBasica = contrato.getValorTotal() / meses;
+		
+		for(int i =1; i<= meses; i++) {
+			Date date = addMon
+		}
+	}
+
+}

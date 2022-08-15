@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;entities.BusinessAcount.java&apos; to &apos;BusinessAccount.java&apos;&#x0D;&#x0A;- Original project: &apos;Heranca&apos;&#x0D;&#x0A;- Original element: &apos;entities.BusinessAcount.java&apos;&#x0D;&#x0A;- Renamed element: &apos;entities.BusinessAccount.java&apos;" description="Rename compilation unit &apos;BusinessAcount.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;entities{BusinessAcount.java" name="BusinessAccount.java" references="false" stamp="1578147914206" version="1.0"/>
+</session>

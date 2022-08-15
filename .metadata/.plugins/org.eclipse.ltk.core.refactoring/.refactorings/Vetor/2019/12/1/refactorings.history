@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;entitiesExeVetc.Roon.java&apos; to &apos;Room.java&apos;&#x0D;&#x0A;- Original project: &apos;Vetor&apos;&#x0D;&#x0A;- Original element: &apos;entitiesExeVetc.Roon.java&apos;&#x0D;&#x0A;- Renamed element: &apos;entitiesExeVetc.Room.java&apos;" description="Rename compilation unit &apos;Roon.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;entitiesExeVetc{Roon.java" name="Room.java" references="false" stamp="1577632529380" version="1.0"/>
+</session>

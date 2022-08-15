@@ -1,0 +1,7 @@
+package m.entities;
+
+public interface InterestRate {
+
+	double getInterestRate();
+	double payment(double amount, int months);
+}

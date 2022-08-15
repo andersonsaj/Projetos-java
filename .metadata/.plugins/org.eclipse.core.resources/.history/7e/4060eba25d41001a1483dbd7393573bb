@@ -1,0 +1,11 @@
+package mod.services;
+
+import mod.entities.Contrato;
+
+public class ContratoServico {
+	
+	public void processContrato(Contrato contrato, Integer meses) {
+		
+	}
+
+}
